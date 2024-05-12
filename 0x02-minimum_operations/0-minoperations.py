@@ -7,7 +7,7 @@ from typing import List
 def generate_factors(n: int) -> List[int]:
     """ Generates a list of factors from 2 to n """
     factors = []
-    for i in range(n + 1):
+    for i in range(2, n + 1):
         
         
 
