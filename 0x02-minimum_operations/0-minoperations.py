@@ -10,4 +10,5 @@ def minOperations(n: int) -> int:
     while H < n:
         copy, paste = H, H + copy
         ops += 2
-    
+
+    return ops
