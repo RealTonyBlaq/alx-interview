@@ -8,8 +8,9 @@ def minOperations(n: int) -> int:
     """
     H, ops = 1, 0
     while H < n:
-        if copy + H <
-        copy, paste = H, H + copy
+        if copy + H <= n:
+            copy = H
+        paste = H + copy
         ops += 2
         H = paste
 
