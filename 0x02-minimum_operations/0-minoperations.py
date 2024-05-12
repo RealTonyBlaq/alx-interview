@@ -8,6 +8,6 @@ def minOperations(n: int) -> int:
     If n is impossible to achieve, returns 0
     """
     factors = [2, 3, 5, 7, 11, 13]
-    while n 
-
+    while n > 1:
+        
     return ops
