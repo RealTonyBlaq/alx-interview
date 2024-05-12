@@ -5,7 +5,7 @@ from typing import List
 
 
 def generate_factors(n: int) -> List[int]:
-    """ Generates the prime factors of a  n """
+    """ Generates the prime factors of n """
     factors = []
     i = 2
 
@@ -27,6 +27,7 @@ def minOperations(n: int) -> int:
     Returns an integer
     If n is impossible to achieve, returns 0.
     """
+    if n <= 
     factors, ops = generate_factors(n), []
     while n > 1:
         for i in factors:
