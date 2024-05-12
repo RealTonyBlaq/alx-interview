@@ -8,7 +8,7 @@ def generate_factors(n: int) -> List[int]:
     """ Generates a list of factors from 2 to n """
     factors = []
     for i in range(2, n + 1):
-        
+        if 
         
 
 def minOperations(n: int) -> int:
