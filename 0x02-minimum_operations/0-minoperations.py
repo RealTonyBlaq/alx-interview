@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """ Interview prep """
 
+from typing import List
 
-def generate_factors()
+
+def generate_factors(n: int) -> List
 
 def minOperations(n: int) -> int:
     """
