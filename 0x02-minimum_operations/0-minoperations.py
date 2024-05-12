@@ -9,6 +9,7 @@ def minOperations(n: int) -> int:
     """
     factors = [2, 3, 5, 7, 11, 13]
     while n > 1:
-        
+        for i in factors:
+            
 
     return ops
