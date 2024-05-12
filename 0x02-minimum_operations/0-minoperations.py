@@ -19,7 +19,7 @@ def generate_factors(n: int) -> List[int]:
     if n > 1:
         factors.append(n)
 
-    return factors
+    return unique()
 
 
 def minOperations(n: int) -> int:
