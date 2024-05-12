@@ -11,6 +11,7 @@ def minOperations(n: int) -> int:
     while n > 1:
         for i in factors:
             if n % i == 0:
-                ops.append()
+                ops.append(n / i)
+                break
 
-    return ops
+    return sum(ops)
