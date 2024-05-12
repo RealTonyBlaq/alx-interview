@@ -27,7 +27,8 @@ def minOperations(n: int) -> int:
     Returns an integer
     If n is impossible to achieve, returns 0.
     """
-    if n <= 
+    if n <= 1:
+        
     factors, ops = generate_factors(n), []
     while n > 1:
         for i in factors:
