@@ -5,7 +5,7 @@ from typing import List
 
 
 def generate_factors(n: int) -> List[int]:
-    """ Generates a list of factors from 2 to n """
+    """ Generates the prime factors of a  n """
     factors = []
     i = 2
 
@@ -15,7 +15,7 @@ def generate_factors(n: int) -> List[int]:
         else:
             n //= i
             factors.append(i)
-    
+
     if n > 1:
         factors.append(n)
     # Returns unique elements in the list by converting to a set
