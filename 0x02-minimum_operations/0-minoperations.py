@@ -4,7 +4,7 @@
 
 def copy_H() -> str:
     with open('test') as f:
-        return f.read()
+        return (f.read()
 
 def minOperations(n: int) -> int:
     """
