@@ -12,6 +12,7 @@ def minOperations(n: int) -> int:
         for i in factors:
             if n % i == 0:
                 ops.append(n / i)
+                n /= i
                 break
 
     return sum(ops)
