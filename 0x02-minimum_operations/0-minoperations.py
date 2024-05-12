@@ -6,8 +6,9 @@ from typing import List
 
 def generate_factors(n: int) -> List[int]:
     """ Generates a list of factors from 2 to n """
-    
+    factors = []
     for i in range(n + 1):
+        
         
 
 def minOperations(n: int) -> int:
