@@ -2,5 +2,8 @@
 """ Interview prep """
 
 def minOperations(n: int) -> int:
-    """ Returns an integer """
+    """
+    Returns an integer
+    If n is impossible to achieve, returns 0
+    """
     
