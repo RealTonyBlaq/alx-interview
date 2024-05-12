@@ -6,7 +6,8 @@ def minOperations(n: int) -> int:
     Returns an integer
     If n is impossible to achieve, returns 0
     """
-    H1
+    H, ops = 1, 0
     while H < n:
         copy, paste = H, H + copy
-        
+        ops += 2
+    
