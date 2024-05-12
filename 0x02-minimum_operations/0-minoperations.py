@@ -2,8 +2,9 @@
 """ Interview prep """
 
 
-def copy_H() :
-    with open('test'):
+def copy_H():
+    with open('test') as f:
+        
 
 def minOperations(n: int) -> int:
     """
