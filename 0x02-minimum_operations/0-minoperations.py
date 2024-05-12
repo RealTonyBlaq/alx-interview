@@ -14,6 +14,6 @@ def minOperations(n: int) -> int:
             ops += 1
         paste = H + copy
         ops += 1
-        H = paste
+        H = past
 
     return ops
