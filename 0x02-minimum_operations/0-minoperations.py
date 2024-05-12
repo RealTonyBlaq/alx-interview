@@ -11,7 +11,7 @@ def minOperations(n: int) -> int:
     while n > 1:
         for i in factors:
             if n % i == 0:
-                ops.append(int(n / i))
+                ops.append(i)
                 n /= i
                 break
 
