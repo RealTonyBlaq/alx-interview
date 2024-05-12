@@ -5,7 +5,7 @@
 def minOperations(n: int) -> int:
     """
     Returns an integer
-    If n is impossible to achieve, returns 0
+    If n is impossible to achieve, returns 0.
     """
     factors, ops = [2, 3, 5, 7, 11, 13, 17], []
     while n > 1:
