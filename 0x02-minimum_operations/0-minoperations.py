@@ -18,8 +18,8 @@ def generate_factors(n: int) -> List[int]:
     
     if n > 1:
         factors.append(n)
-
-    return 
+    # R
+    return list(set(factors))
 
 
 def minOperations(n: int) -> int:
