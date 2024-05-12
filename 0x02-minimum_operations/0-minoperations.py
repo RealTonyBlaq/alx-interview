@@ -6,23 +6,20 @@ from typing import List
 
 def generate_factors(n: int) -> List[int]:
     """ Generates a list of factors from 2 to n """
-    prime_factors = [[] for _ in range(n+1)]
-    primes = [True] * (n+1)
-    primes[0] = primes[1] = False
+    factors = []
+    i = 2
 
-    p = 2
-    while p * p <= n:
-        if primes[p]:
-            for i in range(p * p, n+1, p):
-                primes[i] = False
-                prime_factors[i].append(p)
-        p += 1
+    while i * i <= n:
+        if n % i:
+            i += 1
+        else:
+            n //= i
+            factors.append(i)
+    
+    if n > 1:
+        factors.append(n)
 
-    for num in range(2, n+1):
-        if primes[num]:
-            prime_factors[num].append(num)
-
-    return prime_factors
+    return factors
 
 
 def minOperations(n: int) -> int:
