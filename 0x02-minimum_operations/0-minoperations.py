@@ -23,14 +23,14 @@ def generate_factors(n: int) -> List[int]:
             prime_factors[num].append(num)
 
     return prime_factors
-        
+
 
 def minOperations(n: int) -> int:
     """
     Returns an integer
     If n is impossible to achieve, returns 0.
     """
-    factors, ops = , []
+    factors, ops = generate_factors(n), []
     while n > 1:
         for i in factors:
             if n % i == 0:
