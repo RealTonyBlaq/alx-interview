@@ -4,7 +4,8 @@
 from typing import List
 
 
-def generate_factors(n: int) -> List
+def generate_factors(n: int) -> List[int]:
+    """ Generates a list of factors from """
 
 def minOperations(n: int) -> int:
     """
