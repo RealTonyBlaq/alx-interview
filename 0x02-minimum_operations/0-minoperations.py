@@ -18,7 +18,7 @@ def generate_factors(n: int) -> List[int]:
     
     if n > 1:
         factors.append(n)
-    # R
+    # Returns unique elements in the list by converting to a set
     return list(set(factors))
 
 
