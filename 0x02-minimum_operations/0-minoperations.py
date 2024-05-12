@@ -7,14 +7,7 @@ def minOperations(n: int) -> int:
     Returns an integer
     If n is impossible to achieve, returns 0
     """
-    factors = [2, 3, 5, 7, 11]
-    H, ops, copy = 1, 0, 0
-    while H < n:
-        if copy + H <= n:
-            copy = H
-            ops += 1
-        paste = H + copy
-        ops += 1
-        H = paste
+    factors = [2, 3, 5, 7, 11, 13]
+    while n 
 
     return ops
