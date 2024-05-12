@@ -2,6 +2,8 @@
 """ Interview prep """
 
 
+def generate_factors()
+
 def minOperations(n: int) -> int:
     """
     Returns an integer
