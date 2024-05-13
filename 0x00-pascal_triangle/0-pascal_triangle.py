@@ -12,3 +12,5 @@ def pascal_triangle(n: int) -> List[List[int]]:
         return []
 
     pasc = []
+    k = 1
+    while 
