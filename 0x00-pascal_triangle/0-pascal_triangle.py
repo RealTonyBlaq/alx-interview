@@ -11,4 +11,4 @@ def pascal_triangle(n: int) -> List[List[int]]:
     if n <= 0:
         return []
 
-    
+    pasc = []
