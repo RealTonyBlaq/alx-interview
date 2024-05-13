@@ -17,10 +17,9 @@ def pascal_triangle(n: int) -> List[List[int]]:
         new = [1]
         i = 0
         while i < len(pasc[k - 1]):
-            if not pasc[i + 1]:
-                new.append(1)
-            else:
+            try:
                 new.append(pasc[i] + pasc[i + 1])
+            except 
             i += 1
         pasc.append(new)
         k += 1
