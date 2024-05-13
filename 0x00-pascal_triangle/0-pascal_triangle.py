@@ -16,4 +16,5 @@ def pascal_triangle(n: int) -> List[List[int]]:
     while k < n:
         new = [1]
         if k > 0:
-            new = pasc
+            new = pasc[k - 1]
+            
