@@ -3,4 +3,6 @@
                     representing the Pascals triangle of n
 """
 
+from typing i
 
+def pascal_triangle(n: int):
