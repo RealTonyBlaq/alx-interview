@@ -13,7 +13,7 @@ def pascal_triangle(n: int) -> List[List[int]]:
 
     pasc = []
     k = 0
-    while k <= n:
+    while k < n:
         new = [1]
         if k > 0:
             
