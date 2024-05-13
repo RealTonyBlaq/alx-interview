@@ -7,4 +7,5 @@ from typing import List
 
 
 def pascal_triangle(n: int) -> List[List[int]]:
-    """ """
+    """ Returns the Pascal Triangle of n """
+    
