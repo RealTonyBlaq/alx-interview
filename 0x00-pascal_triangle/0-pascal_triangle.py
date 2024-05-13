@@ -20,4 +20,5 @@ def pascal_triangle(n: int) -> List[List[int]]:
             if not pasc[i + 1]:
                 new.append(1)
             else:
-                new
+                new.append(pasc[i] + pasc[i + 1])
+            
