@@ -13,17 +13,11 @@ def pascal_triangle(n: int) -> List[List[int]]:
         return []
 
     pasc = [[1]]
-    k = 1
-    while k < n:
-        new, i = [1], 0
-        while i < len(pasc[k - 1]):
-            try:
-                new.append(pasc[k - 1][i] + pasc[k - 1][i + 1])
-            except IndexError:
-                new.append(1)
-            finally:
-                i += 1
+    for _ in range(1, n):
+        new, prev = [1], pasc[-1]
+        for i in range(len(prev) - 1):
+            new.append(prev[i] + prev[i + 1])
+        new.append(1)
         pasc.append(new)
-        k += 1
 
     return pasc
