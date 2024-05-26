@@ -32,4 +32,5 @@ with sys.stdin as f:
             if type(code) is int:
                 status_codes[str(code)] += 1
             try:
+                print_stats(status_codes)
                 
