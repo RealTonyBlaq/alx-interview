@@ -26,8 +26,8 @@ status_codes = {
 
 with sys.stdin as f:
     for line in f.readlines():
-        new_line = line.splitlines
-        if len(line.split(' ')) == 8:
+        new_line = line.split()
+        if len(new_line) == 8:
             try:
                 
                 
