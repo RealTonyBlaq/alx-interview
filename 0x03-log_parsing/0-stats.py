@@ -31,7 +31,7 @@ with sys.stdin as f:
             code = new_line[-2]
             if type(code) is int:
                 status_codes[str(code)] += 1
-            if f.tell
+            if f.tell()
             try:
                 print_stats(status_codes)
                 
