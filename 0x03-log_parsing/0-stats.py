@@ -25,13 +25,14 @@ status_codes = {
 }
 
 with sys.stdin as f:
+    page
     for line in f.readlines():
         new_line = line.split()
         if len(new_line) == 8:
             code = new_line[-2]
             if type(code) is int:
                 status_codes[str(code)] += 1
-            if f.tell()
+            if 
             try:
                 print_stats(status_codes)
                 
