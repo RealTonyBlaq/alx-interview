@@ -28,6 +28,6 @@ with sys.stdin as f:
     for line in f.readlines():
         new_line = line.split()
         if len(new_line) == 8:
+            code = new_line[-2]
             try:
-                
                 
