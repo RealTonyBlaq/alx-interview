@@ -31,6 +31,8 @@ with sys.stdin as f:
     for line in f.readlines():
         new_line = line.split()
         code = new_line[-2]
+        size = new_line[-1]
+        total_size += size
         if type(code) is int:
             status_codes[str(code)] += 1
         if page_number % 10:
