@@ -29,3 +29,4 @@ with sys.stdin as f:
         if len(line.split(' ')) == 8:
             try:
                 
+                
