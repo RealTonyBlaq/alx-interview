@@ -30,6 +30,6 @@ with sys.stdin as f:
         if len(new_line) == 8:
             code = new_line[-2]
             if type(code) is int:
-                
+                status_codes[str(code)] += 1
             try:
                 
