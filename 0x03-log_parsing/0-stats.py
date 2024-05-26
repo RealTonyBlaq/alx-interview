@@ -29,6 +29,7 @@ with sys.stdin as f:
         new_line = line.split()
         if len(new_line) == 8:
             code = new_line[-2]
-            if type(code) is in
+            if type(code) is int:
+                
             try:
                 
