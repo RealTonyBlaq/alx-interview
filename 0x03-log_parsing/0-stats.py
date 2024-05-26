@@ -36,5 +36,5 @@ with sys.stdin as f:
                 try:
                     print_stats(status_codes)
                 except KeyboardInterrupt:
-                    
+                    print_stats(status_codes)
                 
