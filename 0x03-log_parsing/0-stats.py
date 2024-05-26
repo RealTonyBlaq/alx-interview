@@ -29,6 +29,7 @@ with sys.stdin as f:
     file_size = 0
     for line in f.readlines():
         new_line = line.split()
+        file_size += f.tell()
         if len(new_line) == 8:
             code = new_line[-2]
             if type(code) is int:
