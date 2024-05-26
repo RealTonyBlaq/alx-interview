@@ -8,7 +8,8 @@ import signal
 def print_stats(stats):
     """ Prints stats """
     for code, count in stats.items():
-        if count
+        if count > 0:
+            print(f'{code}: {}')
 
 read_format = '<IP Address> - [<date>] \"GET /projects/260 HTTP/1.1\" <status code> <file size>'
 status_codes = {
