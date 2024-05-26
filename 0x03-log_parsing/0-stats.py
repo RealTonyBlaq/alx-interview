@@ -5,6 +5,9 @@ import sys
 import signal
 
 
+def print_stats(stats):
+    """ Prints stats"""
+
 read_format = '<IP Address> - [<date>] \"GET /projects/260 HTTP/1.1\" <status code> <file size>'
 status_codes = {
     '200': 0,
