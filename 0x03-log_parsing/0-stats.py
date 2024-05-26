@@ -37,6 +37,6 @@ with sys.stdin as f:
         if page_number % 10:
             try:
                 print_stats(status_codes, total_size)
-                except KeyboardInterrupt:
-                    print_stats(status_codes, total_size)
+            except KeyboardInterrupt:
+                print_stats(status_codes, total_size)
                 
