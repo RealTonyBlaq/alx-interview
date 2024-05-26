@@ -5,7 +5,7 @@ import sys
 import signal
 
 
-def print_stats(stats, total_size):
+def print_stats(stats, total_size, *):
     """ Prints stats """
     print(f'File size: {total_size}')
     for code, count in stats.items():
@@ -27,17 +27,17 @@ status_codes = {
 
 with sys.stdin as f:
     page_number = 0
-    file_size = 0
+    total_size = 0
     for line in f.readlines():
         new_line = line.split()
-        file_size += f.tell()
+        total_size += f.tell()
         if len(new_line) == 8:
             code = new_line[-2]
             if type(code) is int:
                 status_codes[str(code)] += 1
             if page_number % 10:
                 try:
-                    print_stats(status_codes)
+                    print_stats(status_codes, total_size)
                 except KeyboardInterrupt:
-                    print_stats(status_codes)
+                    print_stats(status_codes, total_size)
                 
