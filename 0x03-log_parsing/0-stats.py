@@ -2,7 +2,7 @@
 """ Log Parsing Module """
 
 import sys
-import re
+import signal
 
 
 def print_stats(stats, total_size):
@@ -11,6 +11,12 @@ def print_stats(stats, total_size):
     for code, count in (stats.items()):
         if count > 0:
             print(f'{code}: {count}')
+
+
+def handler(stats, total_size):
+    """ Handles a SIGINT """
+    print_stats(stats, total_size)
+    sys.exit(0)
 
 
 status_codes = {
@@ -24,14 +30,12 @@ status_codes = {
     '500': 0,
 }
 
+signal.signal(signal.SIGINT, handler)
+
 page_number = 0
 total_size = 0
-
 try:
-    while True:
-        line = sys.stdin.readline()
-        if not line:
-            break
+    for line in sys.stdin:
         page_number += 1
         new_line = line.split()
 
@@ -41,11 +45,11 @@ try:
             total_size += int(size)
             if code in status_codes:
                 status_codes[code] += 1
+            if page_number % 10 == 0:
+                print_stats(status_codes, total_size)
         except (IndexError, ValueError):
-            # Handle lines that don't have enough elements or invalid integers
             continue
-
-        if page_number % 10 == 0:
-            print_stats(status_codes, total_size)
 except KeyboardInterrupt:
+    pass
+finally:
     print_stats(status_codes, total_size)
