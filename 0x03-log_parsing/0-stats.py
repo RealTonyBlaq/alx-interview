@@ -5,7 +5,7 @@ import sys
 import signal
 
 
-def print_stats(stats, total_size, *):
+def print_stats(stats, total_size, /):
     """ Prints stats """
     print(f'File size: {total_size}')
     for code, count in stats.items():
