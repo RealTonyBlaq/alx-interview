@@ -5,9 +5,9 @@ import sys
 import signal
 
 
-def print_stats(stats):
+def print_stats(stats, total_size):
     """ Prints stats """
-    print(f'File size: <total size>')
+    print(f'File size: {total_size}')
     for code, count in stats.items():
         if count > 0:
             print(f'{code}: {count}')
