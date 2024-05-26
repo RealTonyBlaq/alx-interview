@@ -2,18 +2,16 @@
 """ Log Parsing Module """
 
 import sys
-import signal
 
 
-def print_stats(stats, total_size, /):
+def print_stats(stats, total_size):
     """ Prints stats """
     print(f'File size: {total_size}')
-    for code, count in stats.items():
+    for code, count in (stats.items()):
         if count > 0:
             print(f'{code}: {count}')
 
 
-read_format = '<IP Address> - [<date>] \"GET /projects/260 HTTP/1.1\" <status code> <file size>'
 status_codes = {
     '200': 0,
     '301': 0,
@@ -25,19 +23,28 @@ status_codes = {
     '500': 0,
 }
 
-with sys.stdin as f:
-    page_number = 0
-    total_size = 0
-    for line in f.readlines():
+page_number = 0
+total_size = 0
+
+try:
+    while True:
+        line = sys.stdin.readline()
+        if not line:
+            break
+        page_number += 1
         new_line = line.split()
-        code = new_line[-2]
-        size = new_line[-1]
-        total_size += size
-        if type(code) is int:
-            status_codes[str(code)] += 1
-        if page_number % 10:
-            try:
-                print_stats(status_codes, total_size)
-            except KeyboardInterrupt:
-                print_stats(status_codes, total_size)
-                
+        
+        try:
+            code = new_line[-2]
+            size = new_line[-1]
+            total_size += int(size)
+            if code in status_codes:
+                status_codes[code] += 1
+        except (IndexError, ValueError):
+            # Handle lines that don't have enough elements or invalid integers
+            continue
+        
+        if page_number % 10 == 0:
+            print_stats(status_codes, total_size)
+except KeyboardInterrupt:
+    print_stats(status_codes, total_size)
