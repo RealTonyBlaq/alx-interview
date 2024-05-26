@@ -26,6 +26,7 @@ status_codes = {
 
 with sys.stdin as f:
     page_number = 0
+    file_size = 0
     for line in f.readlines():
         new_line = line.split()
         if len(new_line) == 8:
