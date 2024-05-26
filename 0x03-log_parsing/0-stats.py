@@ -6,8 +6,10 @@ import signal
 
 
 read_format = '<IP Address> - [<date>] \"GET /projects/260 HTTP/1.1\" <status code> <file size>'
-status_codes = {'200': 0, '301': 0, '400': 0,
-                401, 403, 404, 405, 500}
+status_codes = {'200': 0,
+                '301': 0,
+                '400': 0,
+                '401': 0,'403': 0, '404': 0, 405, 500}
 
 with sys.stdin as f:
     for line in f.readlines():
