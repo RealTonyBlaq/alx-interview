@@ -30,7 +30,6 @@ with sys.stdin as f:
     total_size = 0
     for line in f.readlines():
         new_line = line.split()
-        total_size += f.tell()
         code = new_line[-2]
         if type(code) is int:
             status_codes[str(code)] += 1
