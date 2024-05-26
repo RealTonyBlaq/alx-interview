@@ -19,4 +19,4 @@ status_codes = {
 
 with sys.stdin as f:
     for line in f.readlines():
-        if 
+        if len(line.split())
