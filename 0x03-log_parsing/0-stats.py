@@ -5,20 +5,6 @@ import sys
 import signal
 
 
-def print_stats(stats, total_size):
-    """ Prints stats """
-    print(f'File size: {total_size}')
-    for code, count in (stats.items()):
-        if count > 0:
-            print(f'{code}: {count}')
-
-
-def handler(stats, total_size):
-    """ Handles a SIGINT """
-    print_stats(stats, total_size)
-    sys.exit(0)
-
-
 status_codes = {
     '200': 0,
     '301': 0,
@@ -30,10 +16,26 @@ status_codes = {
     '500': 0,
 }
 
-signal.signal(signal.SIGINT, handler)
-
 page_number = 0
 total_size = 0
+
+
+def print_stats():
+    """ Prints stats """
+    print(f'File size: {total_size}')
+    for code, count in (status_codes.items()):
+        if count > 0:
+            print(f'{code}: {count}')
+
+
+def handler(sig, total_size):
+    """ Handles a SIGINT """
+    print_stats()
+    sys.exit(0)
+
+
+signal.signal(signal.SIGINT, handler)
+
 try:
     for line in sys.stdin:
         page_number += 1
@@ -46,10 +48,10 @@ try:
             if code in status_codes:
                 status_codes[code] += 1
             if page_number % 10 == 0:
-                print_stats(status_codes, total_size)
+                print_stats()
         except (IndexError, ValueError):
             continue
 except KeyboardInterrupt:
     pass
 finally:
-    print_stats(status_codes, total_size)
+    print_stats()
