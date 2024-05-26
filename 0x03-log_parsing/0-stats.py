@@ -9,4 +9,4 @@ read_format = '<IP Address> - [<date>] \"GET /projects/260 HTTP/1.1\" <status co
 
 with sys.stdin as f:
     for line in f.readlines():
-        
+        if 
