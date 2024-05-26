@@ -2,6 +2,7 @@
 """ Log Parsing Module """
 
 import sys
+import re
 
 
 def print_stats(stats, total_size):
@@ -33,7 +34,7 @@ try:
             break
         page_number += 1
         new_line = line.split()
-        
+
         try:
             code = new_line[-2]
             size = new_line[-1]
@@ -43,7 +44,7 @@ try:
         except (IndexError, ValueError):
             # Handle lines that don't have enough elements or invalid integers
             continue
-        
+
         if page_number % 10 == 0:
             print_stats(status_codes, total_size)
 except KeyboardInterrupt:
