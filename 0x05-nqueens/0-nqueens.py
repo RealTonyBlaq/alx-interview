@@ -16,3 +16,5 @@ try:
 except ValueError:
     print('N must be a number')
     exit(1)
+
+queen = []
