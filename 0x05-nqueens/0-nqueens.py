@@ -18,6 +18,7 @@ def is_valid(board, row, col):
 
 
 def solve_nqueens(N):
+    """ """
     def solve(row):
         if row == N:
             solutions.append(board[:])
