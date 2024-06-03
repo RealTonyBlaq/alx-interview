@@ -18,8 +18,9 @@ def is_valid(board, row, col):
 
 
 def solve_nqueens(N):
-    """ """
+    """ Uses backtracking to find all solutions """
     def solve(row):
+        """ recursively tries to place a queen in each row. """
         if row == N:
             solutions.append(board[:])
             return
