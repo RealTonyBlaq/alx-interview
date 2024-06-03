@@ -3,7 +3,6 @@
 
 import sys
 
-import sys
 
 def is_valid(board, row, col):
     for i in range(row):
@@ -12,6 +11,7 @@ def is_valid(board, row, col):
            board[i] + i == col + row:
             return False
     return True
+
 
 def solve_nqueens(N):
     def solve(row):
@@ -28,6 +28,7 @@ def solve_nqueens(N):
     board = [-1] * N
     solve(0)
     return solutions
+
 
 def print_solutions(solutions):
     for sol in solutions:
@@ -53,3 +54,7 @@ def main():
 
     solutions = solve_nqueens(N)
     print_solutions(solutions)
+
+
+if __name__ == "__main__":
+    main()
