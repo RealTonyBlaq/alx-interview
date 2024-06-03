@@ -1,2 +1,7 @@
 #!/usr/bin/env python3
-"""  a program that solves the N queens problem """
+""" A program that solves the N queens problem """
+
+import sys
+
+
+
