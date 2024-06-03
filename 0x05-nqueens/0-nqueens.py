@@ -4,7 +4,8 @@
 import sys
 
 
-
+def solve(N):
+    """ Solve the problem """
 
 def main():
     if len(sys.argv) != 2:
