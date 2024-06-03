@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ A program that solves the N queens problem """
 
 import sys
@@ -19,6 +19,7 @@ def is_valid(board, row, col):
 
 def solve_nqueens(N):
     """ Uses backtracking to find all solutions """
+
     def solve(row):
         """ Recursively tries to place a queen in each row """
         if row == N:
