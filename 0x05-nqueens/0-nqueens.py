@@ -7,4 +7,6 @@ import sys
 if len(sys.argv) != 1:
     print('Usage: nqueens N')
     exit(1)
+
+try:
     
