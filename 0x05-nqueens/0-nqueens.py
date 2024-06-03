@@ -3,6 +3,9 @@
 
 import sys
 
+
+
+
 def main():
     if len(sys.argv) != 2:
         print('Usage: nqueens N')
@@ -16,6 +19,3 @@ def main():
     except ValueError:
         print('N must be a number')
         sys.exit(1)
-
-queen = []
-king = []
