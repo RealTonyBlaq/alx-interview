@@ -5,7 +5,10 @@ import sys
 
 
 def is_valid(board, row, col):
-    """ """
+    """
+    Checks if placing a queen at (row, col) is valid
+    by ensuring no other queens can attack it.
+    """
     for i in range(row):
         if board[i] == col or \
            board[i] - i == col - row or \
