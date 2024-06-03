@@ -5,6 +5,7 @@ import sys
 
 
 def is_valid(board, row, col):
+    """ """
     for i in range(row):
         if board[i] == col or \
            board[i] - i == col - row or \
