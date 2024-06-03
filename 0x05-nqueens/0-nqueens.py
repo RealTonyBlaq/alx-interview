@@ -18,3 +18,4 @@ except ValueError:
     exit(1)
 
 queen = []
+king = []
