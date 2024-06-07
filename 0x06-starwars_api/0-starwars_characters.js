@@ -21,8 +21,10 @@ request.get(URI, (error, body, response) => {
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
 
-    for (const character of data.characters) {
-      const myPromise = new Promise((resolve, reject) => )
+    asunc for (const character of data.characters) {
+      const myPromise = await new Promise((resolve, reject) => {
+
+      })
     }
   }
 });
