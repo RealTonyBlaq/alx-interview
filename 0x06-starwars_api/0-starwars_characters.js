@@ -23,7 +23,7 @@ request.get(URI, (error, body, response) => {
 
     for (const character of data.characters) {
       const myPromise = new Promise((resolve, reject) => {
-
+        request.get(character, ())
       })
     }
   }
