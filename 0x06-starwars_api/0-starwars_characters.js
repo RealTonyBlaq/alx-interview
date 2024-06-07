@@ -5,8 +5,9 @@ const request = require('request');
 const { json } = require('stream/consumers');
 const filmID = process.argv[2];
 
-try {
-    const id = Number(filmID);
+const id = Number(filmID);
+
+if (isNaN(id)) return (Error(''))
 
 const URI = `https://swapi-api.alx-tools.com/films/${id}`;
 
