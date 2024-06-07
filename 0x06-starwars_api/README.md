@@ -6,7 +6,7 @@
 ./0-starwars_characters.js <film id>
 ```
 
-Example:
+__Example:__
 
 ```cmd
 ./0-starwars_characters.js 3
