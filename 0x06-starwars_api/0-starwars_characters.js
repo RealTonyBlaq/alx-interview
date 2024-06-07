@@ -19,6 +19,8 @@ request.get(URI, (error, body, response) => {
     return;
   }
   if (response.statusCode === 200) {
+    const data = JSON.parse(body);
+
     
   }
 });
