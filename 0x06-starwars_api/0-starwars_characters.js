@@ -22,7 +22,7 @@ request.get(URI, (error, body, response) => {
     const data = JSON.parse(body);
 
     for (const character of data.characters) {
-      
+      const my
     }
   }
 });
