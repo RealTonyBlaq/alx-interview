@@ -31,7 +31,7 @@ request.get(URI, (error, response, body) => {
           }
           if (response.statusCode === 200) {
             const person = JSON.parse(body);
-            
+            resolve()
           }
         });
       })
