@@ -5,6 +5,8 @@ const request = require('request');
 const filmID = process.argv[2];
 
 try {
+    const id = Number(filmID);
+} catch (err) {
     
 }
 const URI = `https://swapi-api.alx-tools.com/films/${}`
