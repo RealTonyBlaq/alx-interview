@@ -2,31 +2,26 @@
 /* script that prints all characters of a Star Wars movie */
 
 const request = require('request');
-const { json } = require('stream/consumers');
-const filmID = process.argv[2];
+const filmID = Number(process.argv[2]);
 
-const id = Number(filmID);
+if (isNaN(filmID)) throw Error('Argument must be a number');
 
-if (!id) return (Error('Argument must be a number'));
+const URI = `https://swapi-api.alx-tools.com/api/films/${filmID}`;
 
-const URI = `https://swapi-api.alx-tools.com/films/${id}`;
-
-request.get(URI, (error, response, body) => {
+request.get(URI, async (error, response, body) => {
   if (error) {
     console.error(error);
     return;
   }
+
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
 
-    const allCharacters = [];
+    const promises = [];
     for (const character of data.characters) {
-      allCharacters.push(new Promise((resolve, reject) => {
+      promises.push(await new Promise((resolve, reject) => {
         request.get(character, (error, response, body) => {
-          if (error) {
-            reject(error);
-            return;
-          }
+          if (error) reject(error);
           if (response.statusCode === 200) {
             const person = JSON.parse(body);
             resolve(person.name);
@@ -34,14 +29,15 @@ request.get(URI, (error, response, body) => {
         });
       }));
     }
-    Promise.all(allCharacters)
-    .then(characters => {
-        characters.forEach(name => {
-            console.log(name);
+
+    Promise.all(promises)
+      .then(allPromises => {
+        allPromises.forEach(name => {
+          console.log(name);
         });
-    })
-    .catch((error) => {
-        console.error(error);
-    });
+      })
+      .catch((err) => {
+        console.error(err);
+      });
   }
 });
