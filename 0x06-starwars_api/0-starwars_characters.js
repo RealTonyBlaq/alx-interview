@@ -28,8 +28,10 @@ request.get(URI, (error, response, body) => {
             reject(error);
             return;
           }
-          if (res)
-        })
+          if (response.statusCode === 200) {
+            
+          }
+        });
       })
     }
   }
