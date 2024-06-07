@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /* script that prints all characters of a Star Wars movie */
 
-const request = require('request');
+import reques
 const filmID = process.argv[2];
 
 try {
@@ -11,4 +11,6 @@ try {
     return;
 }
 
-const URI = `https://swapi-api.alx-tools.com/films/${}`
+const URI = `https://swapi-api.alx-tools.com/films/${id}`;
+
+
