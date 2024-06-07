@@ -12,7 +12,7 @@ __Example:__
 ./0-starwars_characters.js 3
 ```
 
-The id **3** is for the Movie ***"Return of the Jedi"***
+The `film id` **3** is for the Movie ***"Return of the Jedi"***
 
 
 __Output:__
