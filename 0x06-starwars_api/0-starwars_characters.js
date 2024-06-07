@@ -13,3 +13,4 @@ try {
 
 const URI = `https://swapi-api.alx-tools.com/films/${id}`;
 
+request.get(URI, (error, body))
