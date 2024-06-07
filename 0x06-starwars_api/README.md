@@ -14,4 +14,8 @@ __Example:__
 
 The id **3** is for the Movie ***"Return of the Jedi"***
 
+
+__Output:__
+
+
 `film id` must be a Number and a valid film id for the script to run perfectly.
