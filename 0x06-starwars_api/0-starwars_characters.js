@@ -21,6 +21,8 @@ request.get(URI, (error, body, response) => {
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
 
-    for (const character in data)
+    for (const character of data.characters) {
+      
+    }
   }
 });
