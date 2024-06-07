@@ -2,6 +2,7 @@
 /* script that prints all characters of a Star Wars movie */
 
 const request = require('request');
+const { json } = require('stream/consumers');
 const filmID = process.argv[2];
 
 try {
@@ -29,7 +30,8 @@ request.get(URI, (error, response, body) => {
             return;
           }
           if (response.statusCode === 200) {
-            const 
+            const person = JSON.parse(body);
+            
           }
         });
       })
