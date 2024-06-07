@@ -40,5 +40,8 @@ request.get(URI, (error, response, body) => {
             console.log(name);
         });
     })
+    .catch((error) => {
+        console.error(error);
+    });
   }
 });
