@@ -1,1 +1,1 @@
-##StarWars API - Listing Characters in the API Endpoint
+## StarWars API - Listing Characters in the API Endpoint
