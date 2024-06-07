@@ -35,7 +35,7 @@ request.get(URI, (error, response, body) => {
           }
         });
       });
-      console
+      console.log(myPromise.resolve());
     }
   }
 });
