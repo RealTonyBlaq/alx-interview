@@ -13,7 +13,7 @@ try {
 
 const URI = `https://swapi-api.alx-tools.com/films/${id}`;
 
-request.get(URI, (error, body, response) => {
+request.get(URI, (error, response, body) => {
   if (error) {
     console.error(error);
     return;
@@ -23,7 +23,7 @@ request.get(URI, (error, body, response) => {
 
     for (const character of data.characters) {
       const myPromise = new Promise((resolve, reject) => {
-        request.get(character, ())
+        request.get(character, (error, response, body))
       })
     }
   }
