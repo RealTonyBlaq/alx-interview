@@ -19,7 +19,7 @@ request.get(URI, (error, response, body) => {
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
 
-    for (const character of data.characters) {
+    
        new Promise((resolve, reject) => {
         request.get(character, (error, response, body) => {
           if (error) {
