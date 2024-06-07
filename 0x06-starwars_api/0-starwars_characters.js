@@ -19,8 +19,9 @@ request.get(URI, (error, response, body) => {
   if (response.statusCode === 200) {
     const data = JSON.parse(body);
 
-    
-       new Promise((resolve, reject) => {
+    const allCharacters = [];
+    for (const character of data.characters) {
+      const myPromise = new Promise((resolve, reject) => {
         request.get(character, (error, response, body) => {
           if (error) {
             reject(error);
