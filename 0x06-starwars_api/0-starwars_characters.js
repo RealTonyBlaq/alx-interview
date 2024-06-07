@@ -7,6 +7,8 @@ const filmID = process.argv[2];
 try {
     const id = Number(filmID);
 } catch (err) {
-    console.error(`${}')
+    console.error(`${filmID} must be a number`);
+    return;
 }
+
 const URI = `https://swapi-api.alx-tools.com/films/${}`
