@@ -21,7 +21,7 @@ request.get(URI, (error, response, body) => {
 
     const allCharacters = [];
     for (const character of data.characters) {
-      const myPromise = new Promise((resolve, reject) => {
+      allCharacters.push(return new Promise((resolve, reject) => {
         request.get(character, (error, response, body) => {
           if (error) {
             reject(error);
