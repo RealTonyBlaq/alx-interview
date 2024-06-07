@@ -35,6 +35,6 @@ request.get(URI, (error, response, body) => {
       }));
     }
     Promise.all(allCharacters)
-    .then()
+    .then(characters)
   }
 });
