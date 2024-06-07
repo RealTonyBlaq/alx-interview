@@ -20,7 +20,7 @@ request.get(URI, (error, response, body) => {
     const data = JSON.parse(body);
 
     for (const character of data.characters) {
-      const myPromise = new Promise((resolve, reject) => {
+       new Promise((resolve, reject) => {
         request.get(character, (error, response, body) => {
           if (error) {
             reject(error);
