@@ -36,7 +36,9 @@ request.get(URI, (error, response, body) => {
     }
     Promise.all(allCharacters)
     .then(characters => {
-        characters.forEach
+        characters.forEach(name => {
+            console.log(name);
+        });
     })
   }
 });
