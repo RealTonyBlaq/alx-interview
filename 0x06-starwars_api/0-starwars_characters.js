@@ -32,9 +32,7 @@ request.get(URI, (error, response, body) => {
             resolve(person.name);
           }
         });
-      })
-      );
-      console.log(myPromise);
+      }));
     }
   }
 });
