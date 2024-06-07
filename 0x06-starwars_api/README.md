@@ -11,6 +11,6 @@ Example:
 ```cmd
 ./0-starwars_characters.js 3
 ```
-The 
+The id **3** 
 
 `film id` must be a Number and a valid film id
