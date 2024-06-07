@@ -9,7 +9,8 @@
 Example:
 
 ```cmd
-./0-st
+./0-starwars_characters.js 3
 ```
+The 
 
 `film id` must be a Number and a valid film id
