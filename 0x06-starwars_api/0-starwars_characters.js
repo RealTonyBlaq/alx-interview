@@ -15,6 +15,10 @@ const URI = `https://swapi-api.alx-tools.com/films/${id}`;
 
 request.get(URI, (error, body, response) => {
   if (error) {
-    console.error()
+    console.error(error);
+    return;
+  }
+  if (response.statusCode === 200) {
+    
   }
 });
