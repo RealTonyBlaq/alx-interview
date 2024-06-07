@@ -21,7 +21,7 @@ request.get(URI, (error, response, body) => {
 
     const allCharacters = [];
     for (const character of data.characters) {
-      allCharacters.push(return new Promise((resolve, reject) => {
+      allCharacters.push(new Promise((resolve, reject) => {
         request.get(character, (error, response, body) => {
           if (error) {
             reject(error);
@@ -33,6 +33,7 @@ request.get(URI, (error, response, body) => {
           }
         });
       });
+      );
       console.log(myPromise);
     }
   }
