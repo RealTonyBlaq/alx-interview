@@ -7,7 +7,7 @@ const filmID = process.argv[2];
 
 const id = Number(filmID);
 
-if (isNaN(id)) return (Error('Argument must be a number'));
+if (!id) return (Error('Argument must be a number'));
 
 const URI = `https://swapi-api.alx-tools.com/films/${id}`;
 
