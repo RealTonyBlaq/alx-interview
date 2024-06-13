@@ -6,4 +6,4 @@ def rotate_2d_matrix(matrix):
     n = len(matrix)
     for r in range(n):
         for c in range(n):
-            
+            temp = matrix[r][c]
