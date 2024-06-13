@@ -7,4 +7,5 @@ def rotate_2d_matrix(matrix):
         new = []
         n = len(matrix)
         for i in range(n):
+            row = []
             
