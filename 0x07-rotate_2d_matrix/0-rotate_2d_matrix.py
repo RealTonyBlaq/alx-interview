@@ -9,5 +9,6 @@ def rotate_2d_matrix(matrix):
         for i in range(n):
             new[i] = []
             for matris in matrix:
-                new[i].append(li)
+                new[i].append(matris[i])
+            new[i].re
             
