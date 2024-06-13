@@ -6,4 +6,7 @@ def rotate_2d_matrix(matrix):
     n = len(matrix)
     for r in range(n):
         for c in range(r + 1, n):
-            matrix[r][c], matrix[c][r] = matrix[c][r], m
+            matrix[r][c], matrix[c][r] = matrix[c][r], matrix[r][c]
+
+    for mat in matrix:
+        mat.re
