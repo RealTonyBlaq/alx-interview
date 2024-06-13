@@ -11,4 +11,4 @@ def rotate_2d_matrix(matrix):
             for matris in matrix:
                 new[i].append(matris[i])
             new[i].reverse()
-        
+        matrix = new
