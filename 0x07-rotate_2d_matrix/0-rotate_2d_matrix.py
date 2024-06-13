@@ -5,4 +5,6 @@ def rotate_2d_matrix(matrix):
     """ Rotates an n x n Matrix 90 degrees clockwise """
     if matrix and type(matrix) is list:
         new = []
-        
+        n = len(matrix)
+        for i in range(n):
+            
