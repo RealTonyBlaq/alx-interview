@@ -7,6 +7,8 @@ def makeChange(coins, total):
     if total <= 0:
         return 0
 
+    coins.sort(reverse=True)
+
     # Initialize the DP table with "infinity" (a large number)
     dp = [float('inf')] * (total + 1)
     dp[0] = 0
@@ -14,7 +16,11 @@ def makeChange(coins, total):
     # Populate the DP table
     for coin in coins:
         for i in range(coin, total + 1):
-            dp[i] = min(dp[i], dp[i - coin] + 1)
+            if dp[i - coin] != float('inf'):
+                dp[i] = min(dp[i], dp[i - coin] + 1)
+
+                if i == total:
+                    return dp[i]
 
     # If dp[total] is still infinity, it means it's not possible
     # to make the total
