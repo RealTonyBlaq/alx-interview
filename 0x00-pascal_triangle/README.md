@@ -4,8 +4,10 @@
  
  This project is a measure towards preparing for Tech interviews.
 
- To run this program:
+ - To run this program:
 
  ```shell
 ./0-main.py <number>
  ```
+
+ Example:
