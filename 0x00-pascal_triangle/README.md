@@ -9,7 +9,8 @@ In `0-pascal_triangle.py`, the function
  def pascal_triangle(n):
  ```
 was defined based on:
-- i
+- Returns an empty list if n <= 0
+- n will be always an integer
 
  - To run this program:
 
