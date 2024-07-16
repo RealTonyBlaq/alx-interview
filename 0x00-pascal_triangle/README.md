@@ -4,7 +4,7 @@
  
  This project is a measure towards preparing for Tech interviews.
 
-In `
+In `0-pascal_triangle.py`, the function
  ```py
  def pascal_triangle(n):
  ```
