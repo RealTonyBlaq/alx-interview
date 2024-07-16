@@ -10,4 +10,6 @@
 ./0-main.py <number>
  ```
 
- Example:
+ - Example:
+
+ 
