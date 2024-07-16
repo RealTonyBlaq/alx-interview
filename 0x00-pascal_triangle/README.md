@@ -2,4 +2,8 @@
 
  Pascal's triangle is an arrangement of binomial coefficients in triangular form.
  
- This project is a measure towards preparing for Tech interviews
+ This project is a measure towards preparing for Tech interviews.
+
+ To run this program:
+
+ 
