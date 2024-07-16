@@ -13,7 +13,7 @@
  - Example:
 
  ```shell
-./0main.py 5
+$ ./0-main.py 5
  ```
 
 * Output
