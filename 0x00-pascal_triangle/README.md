@@ -5,7 +5,8 @@
  This project is a measure towards preparing for Tech interviews.
 
  ```py
- def 
+ def pascal_triangle(n):
+    
  ```
 
  - To run this program:
