@@ -8,6 +8,8 @@ In `0-pascal_triangle.py`, the function
  ```py
  def pascal_triangle(n):
  ```
+was defined based on:
+- i
 
  - To run this program:
 
