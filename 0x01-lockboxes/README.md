@@ -14,7 +14,11 @@ def canUnlockAll(boxes)
 - The first box boxes[0] is always unlocked
 - Return True if all boxes can be opened, else return False
 
-To test th
+To test the program:
+
+```shell
+./0-main.py
+```
 
 boxes = [[1], [2], [3], [4], []]
 print(canUnlockAll(boxes))
