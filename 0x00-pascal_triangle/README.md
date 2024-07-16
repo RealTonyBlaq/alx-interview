@@ -15,3 +15,9 @@
  ```shell
 ./0main.py 5
  ```
+
+* Output
+
+```
+
+```
