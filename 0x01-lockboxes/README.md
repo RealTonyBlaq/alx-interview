@@ -36,4 +36,6 @@ print(canUnlockAll(boxes))
 Output:
 
 ```shell
+./0-main.py
+
 ```
