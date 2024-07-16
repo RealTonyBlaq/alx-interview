@@ -13,3 +13,14 @@ def canUnlockAll(boxes)
 - There can be keys that do not have boxes
 - The first box boxes[0] is always unlocked
 - Return True if all boxes can be opened, else return False
+
+To test th
+
+boxes = [[1], [2], [3], [4], []]
+print(canUnlockAll(boxes))
+
+boxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]
+print(canUnlockAll(boxes))
+
+boxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]
+print(canUnlockAll(boxes))
