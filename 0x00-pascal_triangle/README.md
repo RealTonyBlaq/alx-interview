@@ -6,8 +6,6 @@
 
  To run this program:
 
- ```cmd
-./0-main.py <>
-
-
+ ```shell
+./0-main.py <number>
  ```
