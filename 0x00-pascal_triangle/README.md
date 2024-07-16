@@ -12,7 +12,8 @@ was defined based on:
 - Returns an empty list if n <= 0
 - n will be always an integer
 
- - To run this program:
+To Run This Program:
+--
 
  ```shell
 ./0-main.py <number>
