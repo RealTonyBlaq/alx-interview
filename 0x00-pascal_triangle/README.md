@@ -12,4 +12,6 @@
 
  - Example:
 
- 
+ ```shell
+./0main.py 5
+ ```
