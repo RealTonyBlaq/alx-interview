@@ -22,3 +22,4 @@ Number of operations: 6
 
 ---
 
+Run the `0-main.py`
