@@ -22,4 +22,10 @@ Number of operations: 6
 
 ---
 
-Run the `0-main.py`
+Run the `0-main.py` script:
+
+```cmd
+$ ./0-main.py 
+Min # of operations to reach 4 char: 4
+Min # of operations to reach 12 char: 7
+```
