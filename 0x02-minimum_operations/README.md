@@ -12,7 +12,8 @@ def minOperations(n)
 * If n is impossible to achieve, return 0
 
 Example:
-
+--
+<text>
 n = 9
 
 H => Copy All => Paste => HH => Paste =>HHH => Copy All => Paste => HHHHHH => Paste => HHHHHHHHH
