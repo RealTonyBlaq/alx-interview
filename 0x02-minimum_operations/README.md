@@ -8,8 +8,9 @@ In a text file, there is a single character H. Your text editor can execute only
 ```py
 def minOperations(n)
 ```
-** Returnsan integer
-If n is impossible to achieve, return 0
+* Returns an integer
+* If n is impossible to achieve, return 0
+
 Example:
 
 n = 9
