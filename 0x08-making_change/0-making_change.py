@@ -3,6 +3,7 @@
 
 from collections import deque
 
+
 def makeChange(coins, total):
     """
     Making change
@@ -12,7 +13,7 @@ def makeChange(coins, total):
 
     # Sort coins in descending order to potentially reach the solution faster
     coins.sort(reverse=True)
-    
+
     # Initialize a queue for BFS
     queue = deque([(0, 0)])  # (current_sum, number_of_coins_used)
     visited = set([0])  # To avoid revisiting the same sum
