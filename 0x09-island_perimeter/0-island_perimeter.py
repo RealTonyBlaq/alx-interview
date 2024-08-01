@@ -26,4 +26,5 @@ def check_surroundings(grid):
         if grid[0][cell] != 0 and grid[-1][cell] != 0:
             return False
 
-    for 
+    for square in grid:
+        if square[0] != 0 and 
