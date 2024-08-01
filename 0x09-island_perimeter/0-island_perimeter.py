@@ -20,3 +20,5 @@ def island_perimeter(grid):
 
     for island in grid:
         
+
+def check_surroundings()
