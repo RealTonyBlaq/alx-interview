@@ -15,13 +15,15 @@ def island_perimeter(grid):
     The island doesn't have “lakes” (water inside that isn't connected to the water surrounding the island).
     """
 
-    if grid == []:
+    if not grid == []:
         return 0
 
-    
 
 def check_surroundings(grid):
     """ Checks that the grid is surrounded by water """
+    if not grid or grid == []:
+        return False
+
     size = len(grid[0])
     for cell in range(size):
         if grid[0][cell] != 0 and grid[-1][cell] != 0:
