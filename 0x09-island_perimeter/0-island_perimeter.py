@@ -15,7 +15,7 @@ def island_perimeter(grid):
     The island doesn't have “lakes” (water inside that isn't connected to the water surrounding the island).
     """
 
-    if not grid == []:
+    if not check_surroundings(grid):
         return 0
 
 
