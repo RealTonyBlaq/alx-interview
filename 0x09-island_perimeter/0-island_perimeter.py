@@ -23,6 +23,6 @@ def check_surroundings(grid):
     """ Checks that the grid is surrounded by water """
     size = len(grid[0])
     for cell in range(size):
-        if grid[0][cell] != 0:
+        if grid[0][cell] !=and grid[-1][cell] != 0:
             return False
     
