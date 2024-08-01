@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """ Script returns the perimeter of the island described in grid """
 
+
 def island_perimeter(grid):
     """
     grid is a list of list of integers:
-    
+
     0 represents water
     1 represents land
     Each cell is square, with a side length of 1
@@ -12,7 +13,8 @@ def island_perimeter(grid):
     grid is rectangular, with its width and height not exceeding 100
     The grid is completely surrounded by water
     There is only one island (or nothing).
-    The island doesn't have “lakes” (water inside that isn't connected to the water surrounding the island).
+    The island doesn't have “lakes” (water inside that isn't connected
+    to the water surrounding the island).
     """
 
     if not check_surroundings(grid):
@@ -31,10 +33,11 @@ def island_perimeter(grid):
                     perimeter += 1
                 if c == 0 or grid[r][c - 1] == 0:  # Left
                     perimeter += 1
-                if c == cols - 1 or grid[r][c+1] == 0:  # Right
+                if c == cols - 1 or grid[r][c + 1] == 0:  # Right
                     perimeter += 1
 
     return perimeter
+
 
 def check_surroundings(grid):
     """ Checks that the grid is surrounded by water """
