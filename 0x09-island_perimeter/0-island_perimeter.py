@@ -21,3 +21,4 @@ def island_perimeter(grid):
 
 def check_surroundings(grid):
     """ Checks that the grid is surrounded by water """
+    for cell in grid
