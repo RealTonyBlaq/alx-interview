@@ -16,4 +16,6 @@ def island_perimeter(grid):
     """
 
     if grid == []:
-        return 
+        return 0
+
+    
