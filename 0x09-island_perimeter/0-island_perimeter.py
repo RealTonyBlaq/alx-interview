@@ -27,7 +27,7 @@ def island_perimeter(grid):
                 # Check all four directions
                 if r == 0 or grid[r-1][c] == 0:  # Up
                     perimeter += 1
-                if r == rows-1 or grid[r+1][c] == 0:  # Down
+                if r == rows - 1 or grid[r+1][c] == 0:  # Down
                     perimeter += 1
                 if c == 0 or grid[r][c-1] == 0:  # Left
                     perimeter += 1
