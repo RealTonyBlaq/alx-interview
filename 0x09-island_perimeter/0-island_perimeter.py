@@ -27,4 +27,5 @@ def check_surroundings(grid):
             return False
 
     for square in grid:
-        if square[0] != 0 and 
+        if square[0] != 0 and square[-1] != 0:
+            return False
