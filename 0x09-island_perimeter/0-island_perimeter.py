@@ -18,7 +18,8 @@ def island_perimeter(grid):
     if not check_surroundings(grid):
         return 0
 
-    rows, cols = len(grid), len()
+    rows, cols = len(grid), len(grid[0])
+    perimeter = 0
 
     for r in range(rows):
         for c in range(cols):
