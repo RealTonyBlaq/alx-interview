@@ -17,7 +17,7 @@ def island_perimeter(grid):
     to the water surrounding the island).
     """
 
-    if not check_surroundings(grid):
+    if grid == []:
         return 0
 
     rows, cols = len(grid), len(grid[0])
