@@ -37,20 +37,3 @@ def island_perimeter(grid):
                     perimeter += 1
 
     return perimeter
-
-
-def check_surroundings(grid):
-    """ Checks that the grid is surrounded by water """
-    if not grid or grid == []:
-        return False
-
-    size = len(grid[0])
-    for cell in range(size):
-        if grid[0][cell] != 0 and grid[-1][cell] != 0:
-            return False
-
-    for square in grid:
-        if square[0] != 0 and square[-1] != 0:
-            return False
-
-    return True
