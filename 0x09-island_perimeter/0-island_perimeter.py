@@ -18,8 +18,6 @@ def island_perimeter(grid):
     if grid == []:
         return 0
 
-    for island in grid:
-        
 
 def check_surroundings(grid):
     """ Checks that the grid is surrounded by water """
