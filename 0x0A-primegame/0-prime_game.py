@@ -2,4 +2,4 @@
 """ Prime Game """
 
 def isWinner(x, nums):
-    for num in 
+    for num in nums:
