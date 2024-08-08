@@ -6,3 +6,4 @@ def isWinner(x, nums):
     player = {'Maria': 0, 'Ben': 0}
 
     for num in nums:
+        f
